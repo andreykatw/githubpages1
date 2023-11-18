@@ -13,8 +13,6 @@ if (!isset($_GET['phase'])){
 include 'db.php';
 if(!isset($connection)){
     $connection = new mysqli('localhost', 'root', '', 'test');
-    $db = new Db();
-    $db -> createTables($connection);
 }
 
 switch ($_GET['page']) {
