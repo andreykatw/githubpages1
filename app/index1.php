@@ -12,7 +12,7 @@ if (!isset($_GET['phase'])){
 
 include 'db.php';
 if(!isset($connection)){
-    $connection = new mysqli('admin', 'admin', 'root', 'main');
+    $connection = new mysqli('mysql', 'admin', 'admin', 'main');
 }
 
 switch ($_GET['page']) {
